@@ -4,7 +4,7 @@ function BannerButtons() {
   return (
     <div className="flex  sm:flex-row gap-5 sm:gap-4 md:gap-6 lg:gap-16 w-auto sm:w-auto">
           <Link
-            text={'Ver Carta'}
+            text={'Ver Productos'}
             href="/letter"
             variant="primary"
           />

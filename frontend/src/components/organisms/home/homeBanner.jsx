@@ -5,11 +5,13 @@ import { BannerButtons } from "../../molecules/home/bannerButtons"
 import { BannerCoffee } from "../../molecules/home/bannerCupCoffe"
 
 function HomeBanner() {
-  const title  = 'BROWN COFFEE'
-  const description = `"Siéntete como en casa. Aquí te esperamos con café recién molido,
-          postres recién horneados y helados irresistibles. Cada visita es una oportunidad
-          para desconectarte y disfrutar del momento. Déjate envolver por el aroma,
-          los sabores y la calidez de nuestro espacio."`
+  const title  = 'Shilicolate'
+  const description = `"En Shilicolate te invitamos a vivir una experiencia
+  llena de sabor y calidez. Disfruta de nuestros shilibonbones, chocotejas, 
+  chocolate comestible, chocolate en chapa y chocolates en caja, elaborados 
+  para despertar tus sentidos y regalarte un momento especial. Cada detalle 
+  está pensado para que te desconectes, te relajes y te dejes envolver por 
+  el inconfundible aroma del cacao. Aquí, cada visita se convierte en un dulce recuerdo."`
 
   return (
     <section 
