@@ -23,8 +23,8 @@ function AboutUsGallerySection() {
           
           {/* Imagen 1 - Grande izquierda */}
           <AboutUsGalleryImage 
-            src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=1000&auto=format&fit=crop" 
-            alt="Interior Cafetería"
+            src="./US-2.jpeg" 
+            alt="Interior chocolatería"
             className="md:row-span-2"
             data-aos="fade-right"
             data-aos-duration="1000"
@@ -33,7 +33,7 @@ function AboutUsGallerySection() {
 
           {/* Imagen 2 - Pequeña centro arriba */}
           <AboutUsGalleryImage
-            src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?q=80&w=1000&auto=format&fit=crop" 
+            src="./US-1.jpeg" 
             alt="Detalle Café"
             data-aos="fade-down"
             data-aos-duration="1000"
@@ -42,7 +42,7 @@ function AboutUsGallerySection() {
 
           {/* Imagen 3 - Grande derecha */}
           <AboutUsGalleryImage 
-            src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?q=80&w=1000&auto=format&fit=crop" 
+            src="./US-4.jpeg" 
             alt="Ambiente"
             className="md:row-span-2"
             data-aos="fade-left"
@@ -52,7 +52,7 @@ function AboutUsGallerySection() {
 
           {/* Imagen 4 - Pequeña centro abajo */}
           <AboutUsGalleryImage 
-            src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=1000&auto=format&fit=crop" 
+            src="./US-3.jpg" 
             alt="Grano de Café"
             data-aos="fade-up"
             data-aos-duration="1000"

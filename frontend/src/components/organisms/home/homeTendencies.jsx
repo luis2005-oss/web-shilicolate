@@ -3,11 +3,6 @@ import { Title } from "../../atoms/titles";
 import { TendenciesDescription } from "../../molecules/home/hometendenciesDesc";
 
 function Tendencies() {
-  const menuTendencies = [
-    { text: 'Cafés', href: 'coffee' },
-    { text: 'Galletas', href: 'cookies' },
-    { text: 'Postres', href: 'cakes' },
-  ];
   const title = 'Nuestras tendencias'
 
   return (
@@ -34,23 +29,8 @@ function Tendencies() {
       </div>
 
       <nav className="w-full flex justify-center">
-        <ul className="flex gap-4 sm:gap-8 md:gap-13 flex-wrap justify-center">
-          {menuTendencies.map((item, i) => (
-            <li key={i}>
-              <NavLink
-                to={item.href}
-                replace
-                className={({ isActive }) =>
-                  `py-1.5 sm:py-2 px-3 sm:px-4 md:px-2 rounded transition-all duration-300 text-sm sm:text-base ${isActive
-                    ? 'bg-[#A66A06] text-white font-semibold'
-                    : 'text-gray-700 hover:bg-[#A66A06] hover:text-white'
-                  }`
-                }
-              >
-                {item.text}
-              </NavLink>
-            </li>
-          ))}
+        <ul className="flex gap-4 sm:gap-8 md:gap-13 flex-wrap justify-center text-sm sm:text-base md:text-lg font-medium text-[#1a1818]">
+          Nuestros productos más populares
         </ul>
       </nav>
 

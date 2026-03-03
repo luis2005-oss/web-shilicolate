@@ -4,7 +4,7 @@ function IframeMaps() {
           <div className="mt-4 flex flex-col sm:flex-row gap-4 items-stretch">
             <div className="flex-1 overflow-hidden shadow-lg">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d494.1542817!2d-78.14626!3d-6.86913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwNTInMDguOSJTIDc4wrAwOCc0Ni41Ilc!5e0!3m2!1ses!2spe!4v1733097600000!5m2!1ses!2spe"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15844.667209129342!2d-78.143618!3d-6.8706073!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91b3cdc4f7357899%3A0xf6f379f8c0c8b2e8!2sShilicolate!5e0!3m2!1ses-419!2spe!4v1772557804244!5m2!1ses-419!2spe"
                 width="100%"
                 height="200"
                 style={{ border: 0 }}

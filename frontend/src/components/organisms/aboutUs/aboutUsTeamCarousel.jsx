@@ -51,7 +51,7 @@ function AboutUsTeamCarousel() {
         
         {/* Título - Aparece con fade-down */}
         <Title 
-          level="h2" 
+          level="h1" 
           text="Nuestro Equipo" 
           variant="primary" 
           className="font-joti mb-16 drop-shadow-[0_4px_10px_rgba(0,0,0,0.8)] text-center"

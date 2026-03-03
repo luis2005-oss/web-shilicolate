@@ -13,6 +13,7 @@ function Paragraph ({
     default: 'text-black',
     primary: 'text-[#FFBB00]',
     secondary: 'text-[#FFFFFF]',
+    terciary: 'text-[#1a1818]',
     danger: 'text-gray-600'
   };
 

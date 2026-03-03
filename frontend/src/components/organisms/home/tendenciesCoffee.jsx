@@ -7,28 +7,28 @@ function TendenciesCoffee() {
 
   const tendenciesCoffee = [
     {
-      img: "/TEN-COFFEE1.png",
-      title: "Café Espresso",
+      img: "/TREND-PRODUCTS1.png",
+      title: "Por definir",
       description:
-        "Intenso y concentrado, es la base perfecta para muchas bebidas clásicas.",
+        "Por definir",
     },
     {
-      img: "/TEN-COFFEE2.png",
-      title: "Café Latte",
+      img: "/TREND-PRODUCTS1.png",
+      title: "Por definir",
       description:
-        "Suave y cremoso, mezcla armoniosa de espresso con abundante leche.",
+        "Por definir",
     },
     {
-      img: "/TEN-COFFEE3.png",
-      title: "Café Americano",
+      img: "/TREND-PRODUCTS1.png",
+      title: "Por definir",
       description:
-        "Ligero y equilibrado, ideal para quienes prefieren un sabor menos fuerte.",
+        "Por definir",
     },
     {
-      img: "/TEN-COFFEE4.png",
-      title: "Café Mocha",
+      img: "/TREND-PRODUCTS1.png",
+      title: "Por definir",
       description:
-        "Dulce y chocolatoso, combina espresso con cacao y un toque de leche.",
+        "Por definir",
     },
   ];
 

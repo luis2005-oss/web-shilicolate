@@ -19,7 +19,7 @@ function AboutUsHeroSection() {
       <div className="relative z-10 w-full max-w-7xl flex flex-col items-center">
         
         <AboutUsMainTitle 
-          text="Nuestra Pasión: El Café Perfecto"
+          text="Más que chocolate, una experiencia"
           data-aos="fade-down"
           data-aos-duration="1000"
         />
@@ -35,8 +35,8 @@ function AboutUsHeroSection() {
           />
 
           <AboutUsFloatingImage 
-            src="/CUP-COFFEE.png" 
-            alt="Granos de café y humo flotando"
+            src="/CACAO.png" 
+            alt="Granos de cacao"
             data-aos="zoom-in"
             data-aos-duration="1200"
             data-aos-delay="400"
