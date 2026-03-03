@@ -12,7 +12,7 @@ function Paragraph ({
   const variants ={
     default: 'text-black',
     primary: 'text-[#FFBB00]',
-    secondary: 'text-[#A66A06]',
+    secondary: 'text-[#FFFFFF]',
     danger: 'text-gray-600'
   };
 

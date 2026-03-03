@@ -17,7 +17,7 @@ function Link({
     primary: `
       px-6 sm:px-8 md:px-10 
       py-3 md:py-3.5 
-      bg-gradient-to-br from-white to-[#0E4051]
+      bg-gradient-to-br from-white to-[#4081C2]
       text-black font-semibold 
       rounded-lg 
       hover:from-[#725800] hover:to-white

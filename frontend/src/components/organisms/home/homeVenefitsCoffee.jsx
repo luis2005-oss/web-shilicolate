@@ -1,42 +1,43 @@
-import { GiCoffeeBeans, GiCoffeeCup, GiCoffeePot, GiCoffeeMug } from "react-icons/gi";
-import { SiCoffeescript, SiBuymeacoffee } from "react-icons/si";
+import { GiChocolateBar  } from "react-icons/gi";
+import { FaHeartCirclePlus } from "react-icons/fa6";
+import { FaSmileBeam, FaBolt, FaLeaf, FaStar    } from "react-icons/fa";
 import { VenefitionsList } from "../../molecules/home/homeVenefyList";
 import { ContTitles } from "../../molecules/home/venefitsTitles";
 
 function VenefitsCoffee() {
   const verifyOne = [
     {
-      icon: <GiCoffeeBeans className="text-2xl sm:text-3xl lg:text-4xl hover:transform rotate-2" />,
-      title: 'Más Energía',
-      paragraph: 'La cafeína te mantiene despierto, enfocado y activo todo el día.'
+      icon: <FaHeartCirclePlus className="text-2xl sm:text-3xl lg:text-4xl hover:transform rotate-2" />,
+      title: 'Más Placer',
+      paragraph: 'El chocolate despierta los sentidos y convierte cualquier momento en una experiencia deliciosa.'
     },
     {
-      icon: <SiCoffeescript className="text-2xl sm:text-3xl lg:text-4xl" />,
-      title: 'Mejor Enfoque',
-      paragraph: 'Ayuda a mejorar la concentración, la memoria y la claridad mental.'
+      icon: <FaSmileBeam className="text-2xl sm:text-3xl lg:text-4xl" />,
+      title: 'Mejor Estado de Ánimo',
+      paragraph: 'El cacao estimula hormonas que reducen el estrés y aumentan la sensación de felicidad.'
     },
     {
-      icon: <GiCoffeeCup className="text-2xl sm:text-3xl lg:text-4xl" />,
-      title: 'Antioxidantes Naturales',
-      paragraph: 'Protege las células y retrasa el envejecimiento gracias a sus antioxidantes.'
+      icon: <FaBolt className="text-2xl sm:text-3xl lg:text-4xl" />,
+      title: 'Energía Natural',
+      paragraph: 'El chocolate aporta energía y vitalidad para disfrutar el día con mejor actitud.'
     },
   ]
 
   const verifyTwo = [
     {
-      icon: <GiCoffeePot className="text-2xl sm:text-3xl lg:text-4xl" />,
-      title: 'Buen Ánimo',
-      paragraph: 'El café libera hormonas que mejoran el humor y reducen el estrés.'
+      icon: <FaLeaf className="text-2xl sm:text-3xl lg:text-4xl" />,
+      title: 'Antioxidantes Naturales',
+      paragraph: 'El cacao protege las células y contribuye al bienestar gracias a sus antioxidantes.'
     },
     {
-      icon: <GiCoffeeMug className="text-2xl sm:text-3xl lg:text-4xl" />,
-      title: 'Metabolismo Activo',
-      paragraph: 'Acelera la quema de calorías y potencia el rendimiento físico.'
+      icon: <GiChocolateBar  className="text-2xl sm:text-3xl lg:text-4xl" />,
+      title: 'Detalles que Enamoran',
+      paragraph: 'Desde shilibonbones y chocotejas hasta chocolates en caja, cada producto es un regalo perfecto.'
     },
     {
-      icon: <SiBuymeacoffee className="text-2xl sm:text-3xl lg:text-4xl" />,
+      icon: <FaStar  className="text-2xl sm:text-3xl lg:text-4xl" />,
       title: 'Momentos Únicos',
-      paragraph: 'El café crea experiencias: conversaciones, reuniones y buenos recuerdos.'
+      paragraph: 'El chocolate une personas, acompaña conversaciones y crea recuerdos inolvidables.'
     },
   ]
 

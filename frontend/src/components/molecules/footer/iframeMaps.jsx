@@ -11,7 +11,7 @@ function IframeMaps() {
                 allowFullScreen=""
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Ubicación de Broun Coffee - Plaza de Armas, Celendín"
+                title="Ubicación de Shilicolate - AV. Amazonas 513, Celendín"
               />
             </div>
           </div>

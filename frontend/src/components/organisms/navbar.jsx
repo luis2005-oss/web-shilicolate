@@ -17,7 +17,7 @@
     };
 
     return (
-      <nav className="fixed top-0 w-full bg-[#06141F] border-b border-[#FFBB00] z-100">
+      <nav className="fixed top-0 w-full bg-[#462114] border-b border-[#CCA047] z-100">
         <div className="flex items-center justify-between px-6 md:px-5 h-16 md:h-20">
           
           {/* Logo Mobile - Solo visible en mobile (izquierda) */}
@@ -28,7 +28,7 @@
               className="w-10 h-10 object-contain" 
             />
             <span className="text-[#FFBB00] font-bold text-center text-sm whitespace-nowrap">
-              BROUN COFFEE
+              SHILICOLATE
             </span>
           </a>
           <div className="hidden md:block">

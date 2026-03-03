@@ -1,6 +1,6 @@
 function BannerCoffee({
-  src = "/CUP-COFFEE.png",
-  alt = "Taza de café",
+  src = "/CACAO.png",
+  alt = "Imagen de un cacao",
   position = "bottom-10 right-12",
   className = "",
   ...props

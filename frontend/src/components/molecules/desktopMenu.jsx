@@ -5,7 +5,7 @@ function NavbarMenu({ onLinkClick }) {
 
   const menu1 = [
     {
-      text: 'Carta',
+      text: 'Productos',
       href: '/letter'
     },
     {

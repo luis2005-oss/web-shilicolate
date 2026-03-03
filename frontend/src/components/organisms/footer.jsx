@@ -7,7 +7,7 @@ import { FaFacebook, FaInstagram, FaWhatsapp, FaPhone, FaEnvelope } from "react-
 
 function Footer() {
   return (
-    <footer className="bg-[#06141F] h-auto min-h-60 w-full flex flex-col overflow-hidden justify-center pb-3">
+    <footer className="bg-[#000000] h-auto min-h-60 w-full flex flex-col overflow-hidden justify-center pb-3">
       <div className="flex flex-col lg:flex-row w-[92%] mx-auto items-center justify-between gap-8">
         <Logo variant="varFlex" />
         <IframeMaps/>

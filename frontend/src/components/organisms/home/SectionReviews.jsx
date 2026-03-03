@@ -5,32 +5,32 @@ function Reviews() {
   const listReviews = [
     {
       id: 1,
-      title: "Café con arte latte cremoso y delicioso",
-      img: "/REVIEW-1.jpg" 
+      title: "Cacao seleccionado, base de nuestros chocolates artesanales.",
+      img: "/REVIEW-1.jpeg" 
     },
     {
       id: 2,
-      title: "Postres caseros, como esta rebanada de pastel fresca",
+      title: "Chocolates, hechos para disfrutar sin prisa.",
       img: "REVIEW-5.jpg"   
     },
     {
       id: 3,
-      title: "Galletas de chispas de chocolate recién horneadas",
+      title: "Un ambiente cálido donde el chocolate se disfruta mejor.",
       img: "REVIEW-3.jpg" 
     },
     {
       id: 4,
-      title: "La combinación perfecta de café y postre en tu mesa",
-      img: "REVIEW-4.jpg" 
+      title: "Shilicolate, tradición y sabor que nos identifica.",
+      img: "REVIEW-4.png" 
     },
     {
       id: 5,
-      title: "Ambiente acogedor e ideal para tus momentos de relax",
-      img: "REVIEW-2.jpg"
+      title: "Chocolates en chapa, el detalle perfecto para regalar.",
+      img: "REVIEW-2.png"
     },
     {
       id: 6,
-      title: "Proceso de preparación del mejor café de la ciudad",
+      title: "El acompañamiento ideal para tus momentos especiales.",
       img: "REVIEW-6.jpg" 
     },
   ];

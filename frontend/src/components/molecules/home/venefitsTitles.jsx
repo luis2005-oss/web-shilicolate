@@ -16,7 +16,7 @@ function ContTitles() {
 
       <Title
         level="h3"
-        text={'Todo lo bueno empieza con un café'}
+        text={'Donde el chocolate se convierte en experiencia'}
         weight="normal"
         align="center"
         variant="primary"
@@ -24,7 +24,7 @@ function ContTitles() {
 
       <Title
         level="h3"
-        text={'cafévital'}
+        text={'Shilicolate'}
         weight="normal"
         align="center"
         variant="primary"

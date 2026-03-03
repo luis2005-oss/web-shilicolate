@@ -21,8 +21,8 @@ function CategoryNav({ categories, onSelectCategory, activeCategory }) {
   return (
     <nav
       className="sticky mb-4 top-[90px] md:top-[100px] z-40 py-4
-                 bg-[#020202]/95 backdrop-blur-md shadow-2xl
-                 border-b border-[#d6c394]/30 transition-all"
+                bg-[#020202]/95 backdrop-blur-md shadow-2xl
+                border-b border-[#d6c394]/30 transition-all"
       data-aos="fade-down"
       data-aos-duration="800"
       data-aos-once="true"

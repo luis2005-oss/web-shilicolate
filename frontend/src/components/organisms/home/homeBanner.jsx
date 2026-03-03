@@ -31,11 +31,11 @@ function HomeBanner() {
           transition-all duration-300 
           sm:bg-position-[center_30%]
         "
-        style={{ backgroundImage: "url('/HOME_LOGO.jpg')" }}
+        style={{ backgroundImage: "url('/HOME_LOGO.png')" }}
         data-aos="fade-in"
-        data-aos-duration="1500"
+        data-aos-duration="1500" 
       >
-        <div className="absolute inset-0 bg-black/50 md:bg-black/40"></div>
+        <div className="absolute inset-0 bg-black/80 md:bg-black/60"></div>
       </div>
 
       <article 
@@ -62,7 +62,7 @@ function HomeBanner() {
             text={title}
             level="h1"
             weight="bold"
-            variant="primary"
+            variant="tertiary"
             className="text-3xl sm:text-4xl md:text-4xl lg:text-4xl xl:text-5xl font-bold mb-3 sm:mb-4 md:mb-6"
           />
         </div>
@@ -76,7 +76,7 @@ function HomeBanner() {
           <Paragraph 
             text={description}
             size="large"
-            variant="primary"
+            variant="secondary"
             className="max-w-2xl lg:max-w-3xl mb-6 md:mb-8 lg:mb-10 leading-relaxed"
           />
         </div>
