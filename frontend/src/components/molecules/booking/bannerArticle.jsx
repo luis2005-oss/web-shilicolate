@@ -3,8 +3,8 @@ import { Title } from "../../atoms/titles"
 import { BannerBgCurve } from "../bannerBgCurve"
 
 function Article({ ...props }) {
-  const title  = 'Haz tu Reserva'
-  const description = `Asegura tu lugar y disfruta de una experiencia sin esperas`
+  const title  = 'Nuestros reconocimientos'
+  const description = `Reconocimientos que respaldan nuestra calidad, esfuerzo y compromiso con cada cliente.`
 
   return (
     <article 
@@ -21,7 +21,7 @@ function Article({ ...props }) {
       <Paragraph
         text={description}
         size="large"
-        variant="primary"
+        variant="secondary"
         className="max-w-2xl lg:max-w-3xl mb-6 md:mb-8 lg:mb-10 leading-relaxed"
       />
 

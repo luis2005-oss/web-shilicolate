@@ -7,7 +7,7 @@ function BannerCoffee({
 }) {
   return (
     <div
-      className={`bg-white absolute z-30 rounded-full shadow-2xl border border-black shadow-gray-900 flex items-center justify-center
+      className={`bg-[#A4A5A9] absolute z-30 rounded-full shadow-2xl border border-black shadow-gray-900 flex items-center justify-center
                   transition-transform duration-500 hover:scale-110
 
                   ${position} w-24 h-24

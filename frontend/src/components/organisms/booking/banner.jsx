@@ -8,7 +8,7 @@ function Banner() {
       <div
         className="absolute inset-0 bg-no-repeat bg-right bg-cover transition-all duration-300"
         style={{
-          backgroundImage: "url('/IMG-BOOKING.jpeg')",
+          backgroundImage: "url('/IMG-REC.jpg')",
         }}
         data-aos="zoom-in"
         data-aos-duration="1500"
@@ -23,7 +23,7 @@ function Banner() {
       />
 
       <BannerCoffee
-        src="/CUP-BOOKING.png"
+        src="/CUP-REC.png"
         alt="imagen de la taza de café"
         position={`
           bottom-8 left-10

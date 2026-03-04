@@ -16,7 +16,7 @@ function NavbarMenu({ onLinkClick }) {
 
   const menu2 = [
     {
-      text: 'Reservas',
+      text: 'Reconocimientos',
       href: '/bookings'
     },
     {
