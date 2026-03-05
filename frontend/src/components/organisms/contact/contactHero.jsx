@@ -13,18 +13,18 @@ function ContactHero() {
         data-aos-duration="1500"
       >
         <img 
-          src="/IMG-BOOKING.jpeg" 
+          src="/FONDO-CONTACT.jpg" 
           alt="Fondo Contacto" 
           className="w-full h-full object-cover object-center brightness-50"
         />
-        <div className="absolute inset-0 bg-linear-to-b from-black/70 via-black/40 to-black/60"></div>
+        <div className="absolute inset-0 bg-linear-to-b from-black/70 via-black/50 to-black/60"></div>
       </div>
 
       <div className="relative z-10 flex flex-col items-center px-4 max-w-4xl text-center gap-4 mt-4 pb-20 md:pb-32">
         
         {/* Subtítulo - Aparece primero */}
         <span 
-          className="text-[#FFBB00] pt-15 text-sm md:text-base font-bold tracking-[0.3em] uppercase mb-2 animate-pulse drop-shadow-md"
+          className="text-[#CCA047] pt-15 text-sm md:text-base font-bold tracking-[0.3em] uppercase mb-2 animate-pulse drop-shadow-md"
           data-aos="fade-down"
           data-aos-duration="800"
           data-aos-delay="200"
@@ -41,7 +41,7 @@ function ContactHero() {
           <Title 
             level="h1" 
             text="Contáctanos" 
-            variant="secondary"
+            variant="tertiary"
             className="font-joti text-5xl md:text-7xl lg:text-8xl drop-shadow-[0_4px_15px_rgba(0,0,0,1)] scale-110"
           />
         </div>
@@ -63,7 +63,7 @@ function ContactHero() {
 
         {/* Línea decorativa - Aparece con fade */}
         <div 
-          className="w-16 h-1 bg-[#FFBB00] rounded-full mt-4 shadow-[0_0_10px_#FFBB00]"
+          className="w-16 h-1 bg-[#eeff00] rounded-full mt-4 shadow-[0_0_10px_#FFBB00]"
           data-aos="fade"
           data-aos-duration="800"
           data-aos-delay="800"

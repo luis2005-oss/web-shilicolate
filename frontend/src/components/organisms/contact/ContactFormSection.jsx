@@ -59,7 +59,7 @@ function ContactFormSection() {
       >
         <div className="relative p-10 md:p-14 flex flex-col justify-between overflow-hidden">
 
-          <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=1000&auto=format&fit=crop')] bg-cover bg-center opacity-50 transition-transform duration-700 hover:scale-105"></div>
+          <div className="absolute inset-0 bg-[url('./IMG-CONTACT.jpeg')] bg-cover bg-center opacity-30 transition-transform duration-700 hover:scale-105"></div>
 
           <div className="absolute inset-0 bg-linera-to-b from-[#06141F]/80 via-[#06141F]/60 to-[#000000]/90"></div>
 
