@@ -1,5 +1,4 @@
 import { Link } from "../atoms/links"
-import { Title } from "../atoms/titles"
 
 function Logo({variant = 'secondary', className= '' }) {
   return (
@@ -13,15 +12,9 @@ function Logo({variant = 'secondary', className= '' }) {
           <img 
             src="/LOGO.png" 
             alt="Logo de la empresa" 
-            className="w-15 md:w-19 lg:w-31" 
+            className="w-15 md:w-24 lg:w-45 h-auto" 
           />
-          <Title 
-            text={'SHILICOLATE'}
-            level="h3"
-            variant="tertiary"
-            weight="bold"
-            align="center"
-            />
+
         </Link>
     )
 }

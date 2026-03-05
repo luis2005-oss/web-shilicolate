@@ -12,15 +12,11 @@ function ScrollToTop() {
     // 🔹 Rutas que NO deben hacer scroll (Home + secciones)
     const isHomeSection =
       currentPath === "/" ||
-      currentPath === "/coffee" ||
-      currentPath === "/cookies" ||
-      currentPath === "/cakes";
+      currentPath === "/coffee";
 
     const wasHomeSection =
       prevPath === "/" ||
-      prevPath === "/coffee" ||
-      prevPath === "/cookies" ||
-      prevPath === "/cakes";
+      prevPath === "/coffee";
 
     // 👉 Solo hacer scroll si SALES del Home o ENTRAS al Home
     if (!(isHomeSection && wasHomeSection)) {
