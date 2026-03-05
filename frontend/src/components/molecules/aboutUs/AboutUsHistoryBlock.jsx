@@ -9,7 +9,7 @@ function AboutUsHistoryBlock({ ...props }) {
       <Title 
         level="h3" 
         text="Nuestra Historia" 
-        variant="secondary"
+        variant="tertiary"
         className="font-joti mb-6 drop-shadow-md"
       />
       

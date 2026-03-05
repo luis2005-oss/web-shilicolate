@@ -1,6 +1,6 @@
 import { Title } from "../../atoms/titles";
 
-function ScheduleHeader ({ icon: Icon, title, bgColor }) {
+function ScheduleHeader ({ icon: title, bgColor }) {
   return (
     <div className="flex items-center mb-4">
       <div className={`${bgColor} rounded-full p-3 mr-4`}>

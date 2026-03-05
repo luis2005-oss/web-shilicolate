@@ -61,7 +61,7 @@ function ContactFormSection() {
 
           <div className="absolute inset-0 bg-[url('./IMG-CONTACT.jpeg')] bg-cover bg-center opacity-30 transition-transform duration-700 hover:scale-105"></div>
 
-          <div className="absolute inset-0 bg-linera-to-b from-[#06141F]/80 via-[#06141F]/60 to-[#000000]/90"></div>
+          <div className="absolute inset-0 bg-linera-to-b from-[#552D19]/80 via-[#552D19]/60 to-[#000000]/90"></div>
 
           <div className="relative z-10">
             {/* Título del panel - Aparece con fade */}
@@ -73,11 +73,11 @@ function ContactFormSection() {
               <Title
                 level="h3"
                 text="Información de Contacto"
-                variant="secondary"
+                variant="tertiary"
                 className="font-joti text-3xl mb-3 drop-shadow-md"
               />
               <Paragraph className="text-gray-200 font-light mb-12 text-lg drop-shadow-sm">
-                Encuéntranos en el corazón de la ciudad o escríbenos un mensaje.
+                Queremos escucharte. Ven a visitarnos o comunícate con nosotros
               </Paragraph>
             </div>
 
@@ -88,7 +88,7 @@ function ContactFormSection() {
                 data-aos-duration="800"
                 data-aos-delay="300"
               >
-                <InfoItem icon={<FaMapMarkerAlt />} title="Dirección" text="Jr. José Galves 610 - Celendín" />
+                <InfoItem icon={<FaMapMarkerAlt />} title="Dirección" text="Av. Amazonas - 513 - Celendín" />
               </div>
 
               <div
@@ -96,7 +96,7 @@ function ContactFormSection() {
                 data-aos-duration="800"
                 data-aos-delay="400"
               >
-                <InfoItem icon={<FaPhoneAlt />} title="Llámanos" text="+51 929 224 940" />
+                <InfoItem icon={<FaPhoneAlt />} title="Llámanos" text="+51 932 983 227" />
               </div>
 
               <div
@@ -104,20 +104,13 @@ function ContactFormSection() {
                 data-aos-duration="800"
                 data-aos-delay="500"
               >
-                <InfoItem icon={<FaEnvelope />} title="Escríbenos" text="contacto@brouncoffee.com" />
+                <InfoItem icon={<FaEnvelope />} title="Escríbenos" text="contacto@shilicolate.com" />
               </div>
             </div>
           </div>
 
           {/* Horario - Aparece al final */}
-          <div
-            className="relative z-10 mt-12"
-            data-aos="fade-right"
-            data-aos-duration="800"
-            data-aos-delay="600"
-          >
-            <InfoItem icon={<FaClock />} title="Horario" text="Lun - Dom: 7:00 AM - 10:00 PM" />
-          </div>
+          
         </div>
 
         {/* Panel derecho - Formulario */}
@@ -137,7 +130,7 @@ function ContactFormSection() {
               text="Envíanos un Mensaje"
               className="text-white font-bold text-2xl mb-2"
             />
-            <p className="text-gray-400 mb-8 text-sm">Comunícate con nosotros y te responderemos a la brevedad.</p>
+            <p className="text-gray-400 mb-8 text-sm">Comunícate con nosotros y te responderemos.</p>
           </div>
 
           {/* Formulario */}
@@ -153,7 +146,7 @@ function ContactFormSection() {
             >
               <MinimalInput 
                 label="Nombre Completo" 
-                placeholder="Ej: Wesley Voltran" 
+                placeholder="Ej: Juan Pérez" 
                 type="text"
                 value={name}
                 onChange={(e) =>{
@@ -163,7 +156,7 @@ function ContactFormSection() {
                 />
               <MinimalInput 
                 label="Correo Electrónico" 
-                placeholder="WeVo@email.com" 
+                placeholder="Ej: juan.perez@email.com" 
                 type="email"
                 value={email}
                 onChange={(e) =>{
@@ -198,9 +191,9 @@ function ContactFormSection() {
               data-aos-duration="800"
               data-aos-delay="500"
             >
-              <label className="text-sm font-medium text-[#FFBB00] group-focus-within:text-white transition-colors">Mensaje</label>
+              <label className="text-sm font-medium text-[#CCA047] group-focus-within:text-white transition-colors">Mensaje</label>
               <textarea
-                className="w-full bg-[#202023] border-b border-gray-600 focus:border-[#FFBB00] text-gray-200 py-2 outline-none resize-none transition-colors h-32 placeholder-gray-600"
+                className="w-full bg-[#202023] border-b border-gray-600 focus:border-[#6d5616] text-gray-200 py-2 outline-none resize-none transition-colors h-32 placeholder-gray-600"
                 placeholder="Escribe aquí tu mensaje..."
                 value={message}
                 onChange={(e) =>{

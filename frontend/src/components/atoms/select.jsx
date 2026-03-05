@@ -1,5 +1,3 @@
-import { SlExclamation } from "react-icons/sl"
-
 function Select({
   options, 
   name,

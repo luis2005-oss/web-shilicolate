@@ -4,7 +4,7 @@ function AboutUsFloatingImage({ src, alt, ...props }) {
       className="md:w-1/3 flex justify-center items-center my-10 md:my-0 relative"
       {...props}
     >
-      <div className="absolute inset-0 bg-[#FFBB00] blur-[100px] opacity-10 rounded-full animate-pulse"></div>
+      <div className="absolute inset-0 bg-[#CCA047] blur-[100px] opacity-10 rounded-full animate-pulse"></div>
 
       <img 
         src={src} 

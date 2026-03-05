@@ -10,7 +10,7 @@ function NavbarLink({ href, text, onClick }) {
       onClick={onClick}
       className={`
         block px-4 py-2.5 md:px-0 md:py-0
-        ${isActive ? 'text-white' : 'text-[#FFBB00]'}
+        ${isActive ? 'text-white' : 'text-[#CCA047]'}
         hover:text-white
         font-medium
         no-underline
