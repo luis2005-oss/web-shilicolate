@@ -15,7 +15,7 @@ function ContactMapSection() {
           <Title
             level="h2"
             text="Nuestra Ubicación"
-            variant="secondary"
+            variant="tertiary"
             className="font-joti text-center mb-10 text-4xl md:text-5xl drop-shadow-md"
           />
         </div>
@@ -29,14 +29,14 @@ function ContactMapSection() {
           data-aos-easing="ease-in-out"
         >
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d248.51678926927983!2d-78.14441568765433!3d-6.867320868766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwNTInMDIuNCJTIDc4wrAwOCczOS45Ilc!5e0!3m2!1ses-419!2spe!4v1734302566384!5m2!1ses-419!2spe"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15844.667209129342!2d-78.143618!3d-6.8706073!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91b3cdc4f7357899%3A0xf6f379f8c0c8b2e8!2sShilicolate!5e0!3m2!1ses-419!2spe!4v1772557804244!5m2!1ses-419!2spe"
             width="100%"
             height="100%"
             style={{ border: 0 }}
             allowFullScreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            title="Ubicación de Broun Coffee"
+            title="Ubicación de Shilicolate - AV. Amazonas 513, Celendín"
             className="filter grayscale-[0.2] contrast-[1.1] opacity-90 transition-all duration-500 group-hover:grayscale-0 group-hover:opacity-100"
           ></iframe>
 
@@ -47,7 +47,7 @@ function ContactMapSection() {
             data-aos-duration="800"
             data-aos-delay="1500"
           >
-            📍 Jr. José Galves 610 - Celendín
+            📍 Av. Amazonas 513 - Celendín
           </div>
         </div>
       </div>

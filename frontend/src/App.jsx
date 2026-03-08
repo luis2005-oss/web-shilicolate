@@ -8,7 +8,6 @@ import { Navbar } from "./components/organisms/navbar"
 import { useEffect, useState } from "react"
 import { ModalLogin } from "./components/organisms/modals/modalLogin"
 import { CartShop } from "./components/organisms/modals/modalCartShop"
-import { ModalRegister } from "./components/organisms/modals/modalRegister"
 import { ScrollToTop } from "./components/utils/scrollToTop" //scroll animate
 // Tendencies sections
 import { TendenciesCoffee } from "./components/organisms/home/tendenciesCoffee"
