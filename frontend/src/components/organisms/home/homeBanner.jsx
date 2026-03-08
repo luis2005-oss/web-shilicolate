@@ -2,7 +2,7 @@ import { Paragraph } from "../../atoms/paragraph"
 import { Title } from "../../atoms/titles"
 import { BannerBgCurve } from "../../molecules/bannerBgCurve"
 import { BannerButtons } from "../../molecules/home/bannerButtons"
-import { BannerCoffee } from "../../molecules/home/bannerCupCoffe"
+import { BannerChocolate } from "../../molecules/home/bannerChocolate";
 
 function HomeBanner() {
   const title  = 'Shilicolate'
@@ -90,7 +90,7 @@ function HomeBanner() {
           <BannerButtons/>
         </div>
       </article>
-        <BannerCoffee/>
+        <BannerChocolate/>
     </section>
   )
 }

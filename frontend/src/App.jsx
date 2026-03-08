@@ -2,7 +2,7 @@ import { Route, Routes, Navigate } from "react-router-dom"
 import { HomePage } from "./components/pages/homePage"
 import { LetterPage } from "./components/pages/letterPage"
 import { AbouUsPage } from "./components/pages/aboutUsPage"
-import { BookingPage } from "./components/pages/bookingPage"
+import { AcknorPage } from "./components/pages/acknorPage"
 import { ContactPage } from "./components/pages/contactPage"
 import { Navbar } from "./components/organisms/navbar"
 import { useEffect, useState } from "react"
@@ -11,8 +11,6 @@ import { CartShop } from "./components/organisms/modals/modalCartShop"
 import { ScrollToTop } from "./components/utils/scrollToTop" //scroll animate
 // Tendencies sections
 import { TendenciesCoffee } from "./components/organisms/home/tendenciesCoffee"
-import { TendenciesCokies } from "./components/organisms/home/tendenciesCokies"
-import { TendenciesCakes } from "./components/organisms/home/tendenciesCakes"
 import { Footer } from "./components/organisms/footer"
 import { WhatsAppButton } from "./components/atoms/WhatsAppButton"
 // AOS - Animate On Scroll
@@ -42,8 +40,6 @@ function App() {
       children: [
         { index: true, element: <TendenciesCoffee /> }, 
         { path: 'coffee', element: <TendenciesCoffee /> },
-        { path: 'cookies', element: <TendenciesCokies /> },
-        { path: 'cakes', element: <TendenciesCakes /> },
       ]
     },
     {
@@ -65,7 +61,7 @@ function App() {
     },
     {
       path: '/bookings',
-      element: <BookingPage/>
+      element: <AcknorPage/>
     },
     {
       path: '/contact',

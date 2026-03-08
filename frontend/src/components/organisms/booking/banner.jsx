@@ -1,5 +1,5 @@
 import { Article } from "../../molecules/booking/bannerArticle"
-import { BannerCoffee } from "../../molecules/home/bannerCupCoffe"
+import { BannerChocolate } from "../../molecules/home/bannerChocolate"
 
 function Banner() {
   return (
@@ -22,7 +22,7 @@ function Banner() {
         data-aos-delay="300"
       />
 
-      <BannerCoffee
+      <BannerChocolate
         src="/CUP-REC.png"
         alt="imagen de la taza de café"
         position={`

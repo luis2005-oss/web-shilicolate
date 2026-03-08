@@ -2,7 +2,7 @@ import { MyTemplate } from "../templates/myTemplate"
 import { Banner } from "../organisms/booking/banner"
 import { Schedules } from "../organisms/booking/schedules"
 
-function BookingPage() {
+function AcknorPage() {
   return (
     <MyTemplate>
       <Banner/>
@@ -11,4 +11,4 @@ function BookingPage() {
   )
 }
 
-export { BookingPage }
+export { AcknorPage }

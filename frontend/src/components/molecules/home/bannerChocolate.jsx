@@ -1,4 +1,4 @@
-function BannerCoffee({
+function BannerChocolate({
   src = "/CACAO.png",
   alt = "Imagen de un cacao",
   position = "bottom-10 right-12",
@@ -30,4 +30,4 @@ function BannerCoffee({
   );
 }
 
-export { BannerCoffee };
+export { BannerChocolate };
