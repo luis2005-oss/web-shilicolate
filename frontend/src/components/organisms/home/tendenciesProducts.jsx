@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import { TendenciesCard } from "../../molecules/home/homeTendeciesCard";
 
-function TendenciesCoffee() {
+function TendenciesProducts() {
   const trackRef = useRef(null);
   const speed = 0.4;
 
@@ -75,4 +75,4 @@ function TendenciesCoffee() {
   );
 }
 
-export { TendenciesCoffee };
+export { TendenciesProducts };

@@ -1,6 +1,6 @@
 import { Link } from "../atoms/links"
 
-function Logo({variant = 'secondary', className= '' }) {
+function Logo({variant = 'tertiary', className= 'mt-10' }) {
   return (
 
     
@@ -12,7 +12,7 @@ function Logo({variant = 'secondary', className= '' }) {
           <img 
             src="/LOGO.png" 
             alt="Logo de la empresa" 
-            className="w-15 md:w-24 lg:w-45 h-auto" 
+            className="w-15 md:w-24 lg:w-48 h-auto" 
           />
 
         </Link>

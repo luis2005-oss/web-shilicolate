@@ -1,7 +1,7 @@
 import { FiShoppingCart } from "react-icons/fi";
 import { Button } from "../atoms/buttons";
 
-function LoginNavbar({setCartShopOpen}) {
+function CarNavbar({setCartShopOpen}) {
 
   const handleSubmit = (e) =>{
     e.preventDefault()
@@ -21,4 +21,4 @@ function LoginNavbar({setCartShopOpen}) {
   )
 }
 
-export { LoginNavbar }
+export { CarNavbar }

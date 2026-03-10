@@ -1,6 +1,6 @@
 import { NavbarMenu } from "./desktopMenu"
 import { LocationNavbar } from "./locationNavbar"
-import { LoginNavbar } from "./login"
+import { CarNavbar } from "./login"
 
 
 function MobileMenu ({isOpen, closeMenu, setModalIsOpen, setCartShopOpen}) {
@@ -24,7 +24,7 @@ function MobileMenu ({isOpen, closeMenu, setModalIsOpen, setCartShopOpen}) {
 
           {/* Login Mobile */}
           <div className="pt-2">
-            <LoginNavbar 
+            <CarNavbar 
               setModalIsOpen={setModalIsOpen}
               setCartShopOpen={setCartShopOpen}
             />

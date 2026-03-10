@@ -3,7 +3,7 @@ import { Title } from "../atoms/titles"
 import { Autores } from "../molecules/footer/footerAutores"
 import { IframeMaps } from "../molecules/footer/iframeMaps"
 import { Logo } from "../molecules/logo"
-import { FaFacebook, FaInstagram, FaWhatsapp, FaPhone, FaEnvelope } from "react-icons/fa"
+import { FaFacebook, FaInstagram, FaWhatsapp, FaPhone, FaEnvelope, FaTiktok } from "react-icons/fa"
 
 function Footer() {
   return (
@@ -21,25 +21,32 @@ function Footer() {
           <div className="mt-4 flex flex-col items-start gap-4">
             <div className="flex gap-4">
               <Link 
-                href="https://facebook.com" 
+                href="https://web.facebook.com/profile.php?id=100032893851394" 
                 target="_blank" 
                 rel="noopener noreferrer"
               >
                 <FaFacebook size={28} color="white"/>
               </Link>
               <Link 
-                href="https://wa.me/51999999999" 
+                href="https://wa.me/51932983227?text=Hola%2C%20solicito%20su%20cat%C3%A1logo" 
                 target="_blank" 
                 rel="noopener noreferrer"
               >
                 <FaWhatsapp size={28} color="white"/>
               </Link>
               <Link
-                href="https://instagram.com" 
+                href="https://www.instagram.com/shilicolate_oficial?igsh=YmRzZDRrOGphcTlj" 
                 target="_blank" 
                 rel="noopener noreferrer"
               >
                 <FaInstagram size={28} color="white"/>
+              </Link>
+              <Link
+                href="https://www.tiktok.com/@shilicolate_oficial?is_from_webapp=1&sender_device=pc" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <FaTiktok size={28} color="white"/>
               </Link>
             </div>
             <div className="text-white text-sm flex flex-col gap-2 items-start">

@@ -2,7 +2,7 @@
   import { CgMenu, CgClose   } from "react-icons/cg";
   import { NavbarMenu } from "../molecules/desktopMenu";
   import { LocationNavbar } from "../molecules/locationNavbar";
-  import { LoginNavbar } from "../molecules/login";
+  import { CarNavbar } from "../molecules/login";
   import { MobileMenu } from "../molecules/modileMenu";
 
   function Navbar({ setModalIsOpen, setCartShopOpen, setRegisterIsOpen }) {
@@ -39,7 +39,7 @@
           </div>
 
           <div className="hidden md:block">
-            <LoginNavbar 
+            <CarNavbar 
               setModalIsOpen={setModalIsOpen} 
               setCartShopOpen={setCartShopOpen}
               setRegisterIsOpen= {setRegisterIsOpen}

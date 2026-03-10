@@ -65,8 +65,8 @@ export const LetterPage = () => {
     <MyTemplate>
       <div className="min-h-screen bg-[#FFF0F5] px-4 pt-32 pb-8 md:px-8 lg:px-16">
         <ProductHeader
-          title="Nuestra Carta"
-          subtitle="Explora nuestra selección de cafés y postres artesanales"
+          title="Nuestros productos"
+          subtitle="Explora nuestra variedad de productos que tenemos para ofrecerte."
         />
 
         <CategoryNav
