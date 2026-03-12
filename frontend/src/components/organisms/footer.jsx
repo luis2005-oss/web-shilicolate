@@ -54,11 +54,11 @@ function Footer() {
 
                 className="flex items-center gap-2">
                 <FaPhone size={16} />
-                <span>+51 999 999 999</span>
+                <span>+51 932 983 227</span>
               </div>
               <div className="flex items-center gap-2">
                 <FaEnvelope size={16} />
-                <span>info@brouncoffee.com</span>
+                <span>shilicolateoficial@gmail.com</span>
               </div>
             </div>
           </div>

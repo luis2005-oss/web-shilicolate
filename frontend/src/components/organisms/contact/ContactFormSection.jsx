@@ -104,7 +104,7 @@ function ContactFormSection() {
                 data-aos-duration="800"
                 data-aos-delay="500"
               >
-                <InfoItem icon={<FaEnvelope />} title="Escríbenos" text="contacto@shilicolate.com" />
+                <InfoItem icon={<FaEnvelope />} title="Escríbenos" text="shilicolateoficial@gmail.com" />
               </div>
             </div>
           </div>

@@ -1,58 +1,131 @@
-import { RatingDisplay } from "../../atoms/letter/RatingDisplay";
-import { PriceTag } from "../../atoms/letter/PriceTag";
-import { ProductImage } from "../../atoms/letter/ProductImage";
-import { Button } from "../../atoms/buttons";
+import { useState } from "react";
 
-function ProductCard({ product, onOrder }) {
-  const { name = "Producto", price = 0, img, description } = product || {};
-  
-  const imagePath = img ? `/${img}` : "/CUP-COFFEE.png";
-  const formattedPrice = `S/. ${parseFloat(price).toFixed(2)}`;
+export function ProductCard({ product, addToCart }) {
+
+  const [flipped,setFlipped] = useState(false);
 
   return (
-    <article className="bg-[#d6c394] rounded-2xl p-4 shadow-lg flex flex-col h-full relative overflow-hidden transition-transform hover:scale-[1.02] hover:shadow-xl">
-      
-      <div className="absolute top-3 right-3 z-20">
-        <PriceTag price={formattedPrice} />
-      </div>
 
-      {/* 2. Título */}
-      <h3 className="font-bold text-lg text-[#432a0c] mt-6 mb-2 text-center leading-tight min-h-[3rem] flex items-center justify-center px-2">
-        {name}
-      </h3>
+    <div
+      style={{perspective:"1000px",height:"280px"}}
+      onMouseEnter={()=>setFlipped(true)}
+      onMouseLeave={()=>setFlipped(false)}
+    >
 
-      {/* 3. Imagen */}
-      <div className="w-full flex-1 flex items-center justify-center mb-4 min-h-[140px]">
-        <div className="w-32 h-32 sm:w-40 sm:h-40 flex items-center justify-center drop-shadow-2xl z-10 transition-transform duration-500 hover:rotate-6">
-          <ProductImage src={imagePath} alt={name} className="object-contain w-full h-full" />
-        </div>
-      </div>
+      <div
+        style={{
+          position:"relative",
+          width:"100%",
+          height:"100%",
+          transformStyle:"preserve-3d",
+          transition:"transform 0.6s",
+          transform: flipped ? "rotateY(180deg)" : "rotateY(0deg)"
+        }}
+      >
 
-      {/* 4. Footer */}
-      <div className="flex flex-col gap-3 mt-auto w-full">
-        
-        <div className="flex justify-center scale-90 sm:scale-100">
-          <RatingDisplay rating={4.5} />
-        </div>
+        {/* FRENTE */}
 
-        {description && (
-          <p className="text-xs text-[#432a0c] text-center opacity-80 line-clamp-2 px-1 hidden sm:block">
-            {description}
-          </p>
-        )}
+        <div
+          style={{
+            backfaceVisibility:"hidden",
+            position:"absolute",
+            inset:0,
+            borderRadius:"20px",
+            background:`linear-gradient(150deg,${product.color},#CCA047)`,
+            display:"flex",
+            flexDirection:"column",
+            alignItems:"center",
+            justifyContent:"center",
+            padding:"24px"
+          }}
+        >
 
-        <div className="w-full pt-1">
-          <Button 
-            onClick={onOrder}
-            className="w-full bg-[#432a0c] text-[#FFFAD3] py-2.5 rounded-full font-bold text-sm hover:bg-[#5e3b12] active:scale-95 transition-all shadow-md flex items-center justify-center cursor-pointer"
+          <img
+            src={product.URL}
+            alt={product.name}
+            style={{
+              width:"90px",
+              marginBottom:"16px"
+            }}
+          />
+
+          <h3
+            style={{
+              color:"#fff",
+              fontWeight:700
+            }}
           >
-            + Añadir
-          </Button>
+            {product.name}
+          </h3>
+
+          <span
+            style={{
+              fontSize:"11px",
+              background:"#fff",
+              padding:"4px 10px",
+              borderRadius:"20px"
+            }}
+          >
+            {product.category}
+          </span>
+
         </div>
+
+        {/* REVERSO */}
+
+        <div
+          style={{
+            backfaceVisibility:"hidden",
+            position:"absolute",
+            inset:0,
+            transform:"rotateY(180deg)",
+            borderRadius:"20px",
+            background:"#472315",
+            color:"#fff",
+            display:"flex",
+            flexDirection:"column",
+            alignItems:"center",
+            justifyContent:"center",
+            padding:"24px",
+            gap:"10px"
+          }}
+        >
+
+          <h3>{product.name}</h3>
+
+          <p style={{fontSize:"12px",textAlign:"center"}}>
+            {product.desc}
+          </p>
+
+          <div
+            style={{
+              fontSize:"24px",
+              fontWeight:700
+            }}
+          >
+            {product.price}
+          </div>
+
+          <button
+            onClick={()=>addToCart(product)}
+            style={{
+              background:"#fff",
+              color:"#472315",
+              border:"none",
+              borderRadius:"30px",
+              padding:"10px 20px",
+              fontWeight:700,
+              cursor:"pointer"
+            }}
+          >
+            🛒 Agregar al carrito
+          </button>
+
+        </div>
+
       </div>
 
-    </article>
+    </div>
+
   );
 }
-
-export { ProductCard };

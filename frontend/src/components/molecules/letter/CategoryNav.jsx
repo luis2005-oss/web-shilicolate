@@ -1,5 +1,5 @@
 import { CategoryButton } from "../../atoms/letter/CategoryButton";
-import { FaCoffee, FaCookie, FaBirthdayCake } from "react-icons/fa";
+import { FaCoffee, FaBirthdayCake } from "react-icons/fa";
 
 function CategoryNav({ categories, onSelectCategory, activeCategory }) {
   if (!categories || categories.length === 0) return null;
@@ -9,10 +9,6 @@ function CategoryNav({ categories, onSelectCategory, activeCategory }) {
 
     if (lowerName.includes("cafe") || lowerName.includes("café")) {
       return <FaCoffee />;
-    }
-
-    if (lowerName.includes("cookie") || lowerName.includes("galleta")) {
-      return <FaCookie />;
     }
 
     return <FaBirthdayCake />;
