@@ -1,8 +1,10 @@
 import { useState } from "react";
+import { useCart } from "../../../context/CartContext";
 
-export function ProductCard({ product, addToCart }) {
+export function ProductCard({ product }) {
 
   const [flipped,setFlipped] = useState(false);
+  const { addToCart } = useCart();
 
   return (
 
@@ -22,54 +24,6 @@ export function ProductCard({ product, addToCart }) {
           transform: flipped ? "rotateY(180deg)" : "rotateY(0deg)"
         }}
       >
-
-        {/* FRENTE */}
-
-        <div
-          style={{
-            backfaceVisibility:"hidden",
-            position:"absolute",
-            inset:0,
-            borderRadius:"20px",
-            background:`linear-gradient(150deg,${product.color},#CCA047)`,
-            display:"flex",
-            flexDirection:"column",
-            alignItems:"center",
-            justifyContent:"center",
-            padding:"24px"
-          }}
-        >
-
-          <img
-            src={product.URL}
-            alt={product.name}
-            style={{
-              width:"90px",
-              marginBottom:"16px"
-            }}
-          />
-
-          <h3
-            style={{
-              color:"#fff",
-              fontWeight:700
-            }}
-          >
-            {product.name}
-          </h3>
-
-          <span
-            style={{
-              fontSize:"11px",
-              background:"#fff",
-              padding:"4px 10px",
-              borderRadius:"20px"
-            }}
-          >
-            {product.category}
-          </span>
-
-        </div>
 
         {/* REVERSO */}
 
@@ -107,7 +61,7 @@ export function ProductCard({ product, addToCart }) {
           </div>
 
           <button
-            onClick={()=>addToCart(product)}
+            onClick={() => addToCart(product)}
             style={{
               background:"#fff",
               color:"#472315",
