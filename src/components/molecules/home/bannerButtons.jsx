@@ -9,7 +9,7 @@ function BannerButtons() {
             variant="primary"
           />
           <Link
-            text={'Reservar'}
+            text={'Reconocimientos'}
             href="/bookings"
             variant="primary"
           />

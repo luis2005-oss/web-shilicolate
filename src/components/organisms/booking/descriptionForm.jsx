@@ -20,7 +20,7 @@ function Description() {
 
           {/* WhatsApp */}
           <Link
-            href="https://wa.me/51999999999"
+            href="https://wa.me/51932983227"
             target="_blank"
             rel="noopener noreferrer"
             className="text-green-600 hover:text-green-700 transition-transform duration-300 hover:-translate-y-1"
@@ -50,7 +50,7 @@ function Description() {
 
           {/* Teléfono (NO usa target) */}
           <Link
-            href="tel:+51999999999"
+            href="tel:+51932983227"
             className="text-gray-700 hover:text-gray-800 transition-transform duration-300 hover:-translate-y-1"
           >
             <FaPhone className="text-[20px] sm:text-[25px] md:text-[30px]" />
