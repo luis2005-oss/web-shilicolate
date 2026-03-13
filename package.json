@@ -1,5 +1,5 @@
 {
-  "name": "broun-coffee",
+  "name": "web-shilicolate",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -12,6 +12,7 @@
   "dependencies": {
     "@tailwindcss/vite": "4.1.17",
     "aos": "2.3.4",
+    "joi": "18.0.2",
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
     "react-icons": "5.5.0",

@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { useCart } from "../../../context/CartContext";
+import { formatPrice } from "../../utils/formatPrice";
+
 
 export function ProductCard({ product }) {
 
@@ -91,7 +93,7 @@ export function ProductCard({ product }) {
               fontWeight:700
             }}
           >
-            {product.price}
+            {formatPrice(product.price)}
           </div>
 
           <button

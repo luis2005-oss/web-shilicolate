@@ -4,6 +4,7 @@ import { Title } from "../../atoms/titles";
 import { Button } from "../../atoms/buttons";
 import { CartTitle } from "../../molecules/modals/modalCartTitle";
 import { useCart } from "../../../context/CartContext";
+import { sendOrderToWhatsApp } from "../../utils/whatsappOrder";
 
 function CartShop({ setCartShopOpen }) {
   const [isClose, setIsClose] = useState(false);
@@ -33,6 +34,10 @@ function CartShop({ setCartShopOpen }) {
   const handleOrder = () => {
     if (cartItems.length === 0) return;
 
+    const total = getTotalPrice();
+
+    sendOrderToWhatsApp(cartItems, total);
+
     setOrdered(true);
 
     setTimeout(() => {
@@ -43,10 +48,12 @@ function CartShop({ setCartShopOpen }) {
     }, 2000);
   };
 
+  const total = Number(getTotalPrice() || 0);
+
   return (
     <div
       className={`fixed inset-0 bg-black/50 z-998 transition-opacity duration-400 
-        ${isClose ? "opacity-0" : "opacity-100"}`}
+      ${isClose ? "opacity-0" : "opacity-100"}`}
       onClick={handleBgClick}
     >
       <section
@@ -68,56 +75,63 @@ function CartShop({ setCartShopOpen }) {
             </div>
           ) : (
             <div className="space-y-3">
-              {cartItems.map((item) => (
-                <div
-                  key={item.idProduct}
-                  className="flex items-center gap-3 p-3 bg-gray-50 rounded-lg border"
-                >
-                  {item.image && (
-                    <img
-                      src={item.image}
-                      alt={item.name}
-                      className="w-16 h-16 object-cover rounded"
-                    />
-                  )}
+              {cartItems.map((item) => {
+                const price = Number(item.price || 0);
 
-                  <div className="flex-1 min-w-0">
-                    <h4 className="font-semibold text-sm truncate">
-                      {item.name}
-                    </h4>
-                    <p className="text-xs text-gray-500">
-                      ${item.price.toFixed(2)}
-                    </p>
-                  </div>
-
-                  <div className="flex items-center gap-2">
-                    <button
-                      onClick={() =>
-                        updateQuantity(item.idProduct, item.quantity - 1)
-                      }
-                    >
-                      <FiMinus size={16} />
-                    </button>
-                    <span className="w-8 text-center font-semibold">
-                      {item.quantity}
-                    </span>
-                    <button
-                      onClick={() =>
-                        updateQuantity(item.idProduct, item.quantity + 1)
-                      }
-                    >
-                      <FiPlus size={16} />
-                    </button>
-                  </div>
-
-                  <button
-                    onClick={() => removeFromCart(item.idProduct)}
-                    className="text-red-500"
+                return (
+                  <div
+                    key={item.idProduct}
+                    className="flex items-center gap-3 p-3 bg-gray-50 rounded-lg border"
                   >
-                    <FiTrash2 size={18} />
-                  </button>
-                </div>
-              ))}
+                    {item.image && (
+                      <img
+                        src={item.image}
+                        alt={item.name}
+                        className="w-16 h-16 object-cover rounded"
+                      />
+                    )}
+
+                    <div className="flex-1 min-w-0">
+                      <h4 className="font-semibold text-sm truncate">
+                        {item.name}
+                      </h4>
+
+                      <p className="text-xs text-gray-500">
+                        ${price.toFixed(2)}
+                      </p>
+                    </div>
+
+                    <div className="flex items-center gap-2">
+                      <button
+                        onClick={() =>
+                          updateQuantity(item.idProduct, item.quantity - 1)
+                        }
+                      >
+                        <FiMinus size={16} />
+                      </button>
+
+                      <span className="w-8 text-center font-semibold">
+                        {item.quantity}
+                      </span>
+
+                      <button
+                        onClick={() =>
+                          updateQuantity(item.idProduct, item.quantity + 1)
+                        }
+                      >
+                        <FiPlus size={16} />
+                      </button>
+                    </div>
+
+                    <button
+                      onClick={() => removeFromCart(item.idProduct)}
+                      className="text-red-500"
+                    >
+                      <FiTrash2 size={18} />
+                    </button>
+                  </div>
+                );
+              })}
             </div>
           )}
         </div>
@@ -127,9 +141,10 @@ function CartShop({ setCartShopOpen }) {
             <div className="flex justify-between px-2 mb-3">
               <span className="font-semibold">Total:</span>
               <span className="font-bold text-lg">
-                ${getTotalPrice().toFixed(2)}
+                ${total.toFixed(2)}
               </span>
             </div>
+
             <Button
               text="Realizar Pedido"
               className="w-full cursor-pointer"

@@ -2,14 +2,14 @@ import { useState } from "react";
 import { ProductCard } from "../../molecules/letter/ProductCard";
 
 const products = [
-  { id: 1, name: "Producto 1", category: "Categoría 1", price: "$5.00", URL: "/TREND-PRODUCTS1.png", desc: "texto por definir.", color: "#552D19" },
-  { id: 2, name: "Producto 2", category: "Categoría 2", price: "$5.00", URL: "/TREND-PRODUCTS1.png", desc: "texto por definir.", color: "#552D19" },
-  { id: 3, name: "Producto 3", category: "Categoría 3", price: "$5.00", URL: "/TREND-PRODUCTS1.png", desc: "texto por definir.", color: "#552D19" },
-  { id: 4, name: "Producto 4", category: "Categoría 4", price: "$5.00", URL: "/TREND-PRODUCTS1.png", desc: "texto por definir.", color: "#552D19" },
-  { id: 5, name: "Producto 5", category: "Categoría 5", price: "$5.00", URL: "/TREND-PRODUCTS1.png", desc: "texto por definir.", color: "#552D19" },
-  { id: 6, name: "Producto 6", category: "Categoría 1", price: "$5.00", URL: "/TREND-PRODUCTS1.png", desc: "texto por definir.", color: "#552D19" },
-  { id: 7, name: "Producto 7", category: "Categoría 2", price: "$5.00", URL: "/TREND-PRODUCTS1.png", desc: "texto por definir.", color: "#552D19" },
-  { id: 8, name: "Producto 8", category: "Categoría 4 ", price: "$5.00", URL: "/TREND-PRODUCTS1.png", desc: "texto por definir.", color: "#552D19" },
+  { idProduct: 1, name: "Producto 1", category: "Categoría 1", price: 5, URL: "/TREND-PRODUCTS1.png", desc: "texto por definir.", color: "#552D19" },
+  { idProduct: 2, name: "Producto 2", category: "Categoría 2", price: 5, URL: "/TREND-PRODUCTS1.png", desc: "texto por definir.", color: "#552D19" },
+  { idProduct: 3, name: "Producto 3", category: "Categoría 3", price: 5, URL: "/TREND-PRODUCTS1.png", desc: "texto por definir.", color: "#552D19" },
+  { idProduct: 4, name: "Producto 4", category: "Categoría 4", price: 5, URL: "/TREND-PRODUCTS1.png", desc: "texto por definir.", color: "#552D19" },
+  { idProduct: 5, name: "Producto 5", category: "Categoría 5", price: 5, URL: "/TREND-PRODUCTS1.png", desc: "texto por definir.", color: "#552D19" },
+  { idProduct: 6, name: "Producto 6", category: "Categoría 1", price: 5, URL: "/TREND-PRODUCTS1.png", desc: "texto por definir.", color: "#552D19" },
+  { idProduct: 7, name: "Producto 7", category: "Categoría 2", price: 5, URL: "/TREND-PRODUCTS1.png", desc: "texto por definir.", color: "#552D19" },
+  { idProduct: 8, name: "Producto 8", category: "Categoría 4 ", price: 5, URL: "/TREND-PRODUCTS1.png", desc: "texto por definir.", color: "#552D19" },
 ];
 
 const categories = ["Todos","Categoría 1","Categoría 2","Categoría 3","Categoría 4","Categoría 5"];
