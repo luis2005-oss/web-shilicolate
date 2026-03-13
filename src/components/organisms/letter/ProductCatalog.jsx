@@ -9,7 +9,7 @@ const products = [
   { id: 5, name: "Producto 5", category: "Categoría 5", price: "$5.00", URL: "/TREND-PRODUCTS1.png", desc: "texto por definir.", color: "#552D19" },
   { id: 6, name: "Producto 6", category: "Categoría 1", price: "$5.00", URL: "/TREND-PRODUCTS1.png", desc: "texto por definir.", color: "#552D19" },
   { id: 7, name: "Producto 7", category: "Categoría 2", price: "$5.00", URL: "/TREND-PRODUCTS1.png", desc: "texto por definir.", color: "#552D19" },
-  { id: 8, name: "Producto 8", category: "Categoría 4", price: "$5.00", URL: "/TREND-PRODUCTS1.png", desc: "texto por definir.", color: "#552D19" },
+  { id: 8, name: "Producto 8", category: "Categoría 4 ", price: "$5.00", URL: "/TREND-PRODUCTS1.png", desc: "texto por definir.", color: "#552D19" },
 ];
 
 const categories = ["Todos","Categoría 1","Categoría 2","Categoría 3","Categoría 4","Categoría 5"];
