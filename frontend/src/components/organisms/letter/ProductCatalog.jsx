@@ -14,7 +14,7 @@ const products = [
 
 const categories = ["Todos","Categoría 1","Categoría 2","Categoría 3","Categoría 4","Categoría 5"];
 
-export function ProductCatalog({ addToCart }) {
+export function ProductCatalog({ addToCart }) { 
 
   const [activeCategory,setActiveCategory] = useState("Todos");
 

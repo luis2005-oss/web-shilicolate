@@ -25,6 +25,40 @@ export function ProductCard({ product }) {
         }}
       >
 
+        {/* FRENTE */}
+
+        <div
+          style={{
+            backfaceVisibility:"hidden",
+            position:"absolute",
+            inset:0,
+            borderRadius:"20px",
+            background:"#CCA157",
+            display:"flex",
+            flexDirection:"column",
+            alignItems:"center",
+            justifyContent:"center",
+            padding:"20px"
+          }}
+        >
+
+          <img
+            src={product.URL}
+            alt={product.name}
+            style={{
+              width:"90px",
+              height:"90px",
+              objectFit:"contain",
+              marginBottom:"10px"
+            }}
+          />
+
+          <h3 style={{color:"#472315"}}>
+            {product.name}
+          </h3>
+
+        </div>
+
         {/* REVERSO */}
 
         <div
